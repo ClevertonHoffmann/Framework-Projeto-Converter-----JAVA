@@ -1,7 +1,6 @@
 package Conversor;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
+import Conversor.ClassesTestes.Carro;
 import java.io.IOException;
 
 /**
@@ -13,13 +12,16 @@ public class Main {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
         
         Carro c = new Carro();
-        ConvertePHP t = new ConvertePHP(c);
-       // t.cria();
+ //       ConvertePHP t = new ConvertePHP(c);
+    //    t.cria();
                      
-        t.imprimeAtributoseValoresPojo(c); 
+     //   t.retornaArrayAtributosObjeto(c); 
+        
+        //String tex = t.actionPerformed();
+        
         
     }
     

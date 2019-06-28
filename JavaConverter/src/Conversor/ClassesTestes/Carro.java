@@ -1,4 +1,4 @@
-package Conversor;
+package Conversor.ClassesTestes;
 
 /**
  *
@@ -64,9 +64,5 @@ public class Carro {
     @Override
     public String toString() {
         return "Carro{" + "nome=" + nome + ", ano=" + ano + ", modelo=" + modelo + ", marca=" + marca + ", combustivel=" + combustivel + ", valor=" + valor + '}';
-    }
-    
-    public void text(){
-        String real = "10reais";
     }
 }
