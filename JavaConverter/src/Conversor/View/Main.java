@@ -2,7 +2,7 @@ package Conversor.View;
 
 import Conversor.ClassesTestes.Carro;
 import Conversor.ClassesEstruturais.Estructure;
-import Conversor.ClassesEstruturais.EstruturaPHP;
+import Conversor.ClassesEstruturais.EstruturaPython;
 import Conversor.Controller.Principal;
 
 /**
@@ -17,8 +17,8 @@ public class Main {
     public static void main(String[] args) {
         
         Carro c = new Carro();
-        Estructure e = new EstruturaPHP();
-        Principal p = new Principal(c, e, ".php");
+        Estructure e = new EstruturaPython();
+        Principal p = new Principal(c, e, ".py");
                 
     }
     

@@ -8,7 +8,7 @@ package Conversor.ClassesEstruturais;
 import java.util.ArrayList;
 
 /**
- *
+ * Classe responsável pela criação da estrutura de código Python
  * @author Cleverton
  */
 public class EstruturaPython implements Estructure{
@@ -16,39 +16,43 @@ public class EstruturaPython implements Estructure{
     public String criaClasse(ArrayList<String> a) {
         
         String estrutura;
-        estrutura = ("<?php \n"); 
-        estrutura = estrutura.concat("class".concat(a.get(0)).concat("{ \n\n"));
+        //Incializa as variáveis
+        estrutura = ("class ".concat(a.get(0)).concat(": \n\n"));
+        estrutura = estrutura.concat("      def __init__(self");
         for (int i = 1; i<a.size(); i++){
             if(i%2!=0){
-                estrutura = estrutura.concat("private $").concat(a.get(i)).concat("; \n");
+                estrutura = estrutura.concat(",").concat(a.get(i));
             }
         }
+        estrutura = estrutura.concat("):\n");
+        for (int i = 1; i<a.size(); i++){
+            if(i%2!=0){
+                estrutura = estrutura.concat("              self.").concat(a.get(i)).concat(" = ").concat(a.get(i)).concat("\n");
+            }
+        }
+        //Define os seters    
         estrutura = estrutura.concat("\n");
-        //Monta os geters
         for (int i = 1; i<a.size(); i++){
             if(i%2!=0){
-                estrutura = estrutura.concat("public function get").concat(a.get(i).concat("() \n{\n"));
-                estrutura = estrutura.concat("return $this->").concat(a.get(i).concat(";\n} \n\n"));
+                estrutura = estrutura.concat("       def set").concat(a.get(i)).concat("(self, ").concat(a.get(i)).concat("):\n");
+                estrutura = estrutura.concat("              self.").concat(a.get(i)).concat(" = ").concat(a.get(i)).concat("\n\n");
             }
         }
-        //Monta os seter
+        //Define os geters 
         for (int i = 1; i<a.size(); i++){
             if(i%2!=0){
-                estrutura = estrutura.concat("public function set").concat(a.get(i).concat("() \n{\n"));
-                estrutura = estrutura.concat("$this->").concat(a.get(i).concat("= $").concat(a.get(i)).concat(";\n} \n\n"));
+                estrutura = estrutura.concat("       def get").concat(a.get(i)).concat("(self):\n");
+                estrutura = estrutura.concat("              return self.").concat(a.get(i)).concat("\n\n");
+            }
+        }
+        //Implementa o toString
+        for (int i = 1; i<a.size(); i++){
+            if(i%2!=0){
+                estrutura = estrutura.concat("       def get").concat(a.get(i)).concat("(self):\n");
+                estrutura = estrutura.concat("              return self.").concat(a.get(i)).concat("\n\n");
             }
         }
         
-        estrutura = estrutura.concat("\n");
-        estrutura = estrutura.concat("function __toString() {\n");
-        for (int i = 1; i<a.size(); i++){
-            if(i%2!=0){
-                estrutura = estrutura.concat("echo “").concat(a.get(i)).concat(": “.$").concat(a.get(i)).concat("; \n");
-            }
-        } 
-        estrutura = estrutura.concat("}");
-        estrutura = estrutura.concat("\n");
-        estrutura = estrutura.concat("?>");
         return estrutura;
     }
 }
