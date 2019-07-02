@@ -8,7 +8,7 @@ import java.io.PrintWriter;
 import java.util.ArrayList;
 import javax.swing.JFileChooser;
 /**
- *
+ * Persistencia Responsável por criar o documento do Array e selecionar o diretório
  * @author Cleverton
  */
 public class Persistencia {
@@ -23,7 +23,7 @@ public class Persistencia {
      */
     public boolean cria(ArrayList<String> texto){
         
-        File f = new File("".concat(this.returnSelectDirectory()).concat(texto.get(0)).concat(texto.get(1)));
+        File f = new File("".concat(this.returnSelectDirectory()).concat("\\").concat(texto.get(0)).concat(texto.get(1)));
        
         try {
             f.createNewFile();
