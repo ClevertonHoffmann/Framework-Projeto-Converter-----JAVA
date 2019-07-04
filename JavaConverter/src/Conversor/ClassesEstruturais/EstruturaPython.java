@@ -18,7 +18,7 @@ public class EstruturaPython implements Estructure{
         String estrutura;
         //Incializa as variáveis
         estrutura = ("class ".concat(a.get(0)).concat(": \n\n"));
-        estrutura = estrutura.concat("      def __init__(self");
+        estrutura = estrutura.concat("       def __init__(self");
         for (int i = 1; i<a.size(); i++){
             if(i%2!=0){
                 estrutura = estrutura.concat(",").concat(a.get(i));
@@ -46,12 +46,24 @@ public class EstruturaPython implements Estructure{
             }
         }
         //Implementa o toString
+        estrutura = estrutura.concat("       def __repr__(self):\n");
+        estrutura = estrutura.concat("              return “").concat(a.get(0)).concat("(%s");
         for (int i = 1; i<a.size(); i++){
             if(i%2!=0){
-                estrutura = estrutura.concat("       def get").concat(a.get(i)).concat("(self):\n");
-                estrutura = estrutura.concat("              return self.").concat(a.get(i)).concat("\n\n");
+                estrutura = estrutura.concat(",%s");
             }
         }
+        estrutura = estrutura.concat(")”%(");
+        for (int i = 1; i<a.size(); i++){
+            if(i%2!=0){
+                if(i==1){
+                    estrutura = estrutura.concat("str(self.").concat(a.get(i));
+                }else{
+                    estrutura = estrutura.concat("),str(self.").concat(a.get(i));    
+                }
+            }
+        }
+        estrutura = estrutura.concat("))");
         
         return estrutura;
     }

@@ -1,7 +1,9 @@
 package Conversor.View;
 
+import Conversor.ClassesEstruturais.EstruturaCmaismais;
+import Conversor.ClassesEstruturais.EstruturaJavaScript;
 import Conversor.ClassesTestes.Carro;
-import Conversor.ClassesEstruturais.Estructure;
+import Conversor.ClassesEstruturais.EstruturaPHP;
 import Conversor.ClassesEstruturais.EstruturaPython;
 import Conversor.Controller.Principal;
 
@@ -17,8 +19,12 @@ public class Main {
     public static void main(String[] args) {
         
         Carro c = new Carro();
-        Estructure e = new EstruturaPython();
-        Principal p = new Principal(c, e, ".py");
+        
+       // Principal p = new Principal(c, new EstruturaPython(), ".py");
+       // p = new Principal(c, new EstruturaPHP(), ".php");
+      //  p = new Principal(c, new EstruturaJavaScript(), ".js");      
+        Principal p = new Principal(c, new EstruturaJavaScript(), ".js");
+     //   Principal p = new Principal(c, new EstruturaCmaismais(), ".cpp");
                 
     }
     

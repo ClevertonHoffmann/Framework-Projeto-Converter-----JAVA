@@ -1,7 +1,7 @@
 package Conversor.ClassesTestes;
 
 /**
- *
+ * Classe Carro de teste
  * @author Cleverton
  */
 public class Carro {

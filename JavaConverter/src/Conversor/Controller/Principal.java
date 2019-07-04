@@ -39,10 +39,20 @@ public class Principal {
             valores.add(campo.getName()); 
             //Pega o tipo do atributo
             valores.add(campo.getAnnotatedType().getType().getTypeName().replaceAll("java.lang.", "")); 
-        }       
+        }
+        int k=0;
+        for(String a: valores){
+            if(a.equals("Double")){
+                valores.set(k, "double");
+            }
+            k++;
+        }
         return valores;
     }
     
+    /**
+     * Classe principal responsável por criar os objetos
+     */
     private void CriaClasse(){
         ArrayList<String> valores = this.retornaArrayAtributosObjeto(f.objeto);
         String estrutura = f.classe.criaClasse(valores);
