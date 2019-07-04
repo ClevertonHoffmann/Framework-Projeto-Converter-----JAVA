@@ -1,18 +1,16 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package Conversor.ClassesEstruturais;
 
 import java.util.ArrayList;
 
 /**
- *
+ * Classe responsável pela criação da estrutura de código C++
  * @author Cleverton
  */
 public class EstruturaCmaismais implements Estructure{
     @Override
+    /**
+     * Método que retorna string da estrutura da classe C++
+     */
     public String criaClasse(ArrayList<String> a) {
         
         String estrutura;
@@ -44,7 +42,7 @@ public class EstruturaCmaismais implements Estructure{
         }
         
         estrutura = estrutura.concat("\n\n");
-               
+        //Monta o toString()       
         estrutura = estrutura.concat("string ").concat(a.get(0)).concat(" ::toString() {\n");
         estrutura = estrutura.concat("      std::string texto = ");
         estrutura = estrutura.concat("\"").concat(a.get(0)).concat("{\"+");

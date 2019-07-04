@@ -8,7 +8,7 @@ import Conversor.ClassesEstruturais.EstruturaPython;
 import Conversor.Controller.Principal;
 
 /**
- *
+ * Classe main de teste
  * @author Cleverton
  */
 public class Main {
@@ -20,11 +20,10 @@ public class Main {
         
         Carro c = new Carro();
         
-       // Principal p = new Principal(c, new EstruturaPython(), ".py");
-       // p = new Principal(c, new EstruturaPHP(), ".php");
-      //  p = new Principal(c, new EstruturaJavaScript(), ".js");      
-        Principal p = new Principal(c, new EstruturaJavaScript(), ".js");
-     //   Principal p = new Principal(c, new EstruturaCmaismais(), ".cpp");
+        Principal p = new Principal(c, new EstruturaPython(), ".py");
+        p = new Principal(c, new EstruturaPHP(), ".php");
+        p = new Principal(c, new EstruturaJavaScript(), ".js");      
+        p = new Principal(c, new EstruturaCmaismais(), ".cpp");
                 
     }
     

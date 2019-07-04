@@ -1,18 +1,16 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package Conversor.ClassesEstruturais;
 
 import java.util.ArrayList;
 
 /**
- *
+ * Classe responsável pela criação da estrutura de código JavaScript
  * @author Cleverton
  */
 public class EstruturaJavaScript implements Estructure{
     @Override
+    /**
+     * Método que retorna string da estrutura da classe JavaScript
+     */
     public String criaClasse(ArrayList<String> a) {
         
         String estrutura;
@@ -54,7 +52,7 @@ public class EstruturaJavaScript implements Estructure{
         estrutura = estrutura.concat("+\"}\";");
         estrutura = estrutura.concat("\n};\n");
         estrutura = estrutura.concat("return ").concat(a.get(0)).concat(";\n");
-        estrutura = estrutura.concat("}());\n\n");
+        estrutura = estrutura.concat("});\n\n");
         estrutura = estrutura.concat(a.get(0)).concat("[\"__class\"] = ").concat("\"").concat(a.get(0)).concat("\";");
         return estrutura;
     }

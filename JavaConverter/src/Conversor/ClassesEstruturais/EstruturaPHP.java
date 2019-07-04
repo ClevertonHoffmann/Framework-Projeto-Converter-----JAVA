@@ -1,20 +1,17 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package Conversor.ClassesEstruturais;
 
 import java.util.ArrayList;
 
 /**
  * Classe responsável pela criação da estrutura de código PHP
- *
  * @author Cleverton
  */
 public class EstruturaPHP implements Estructure {
 
     @Override
+    /**
+     * Método que retorna string da estrutura da classe PHP
+     */
     public String criaClasse(ArrayList<String> a) {
 
         String estrutura;
@@ -43,14 +40,14 @@ public class EstruturaPHP implements Estructure {
                 estrutura = estrutura.concat("  $this->").concat(a.get(i).concat(" = $").concat(a.get(i)).concat(";\n} \n\n"));
             }
         }
-
+        //Monta o toString()    
         estrutura = estrutura.concat("\n");
         estrutura = estrutura.concat("function __toString() {\n");
         estrutura = estrutura.concat("return \"").concat(a.get(0)).concat(": {\".");
         for (int i = 1; i < a.size(); i++) {
             if (i % 2 != 0) {
                 if (i == 1) {
-                    estrutura = estrutura.concat("\"").concat(a.get(i)).concat(": \".get").concat(a.get(i)).concat("().");
+                    estrutura = estrutura.concat("\"").concat(a.get(i)).concat(": \".get").concat(a.get(i)).concat("()");
                 } else {
                     estrutura = estrutura.concat(".\"").concat(a.get(i)).concat(": \".get").concat(a.get(i)).concat("()");
                 }
@@ -58,7 +55,7 @@ public class EstruturaPHP implements Estructure {
         }
         estrutura = estrutura.concat(".\"}\";");
         estrutura = estrutura.concat("\n}\n");
-        estrutura = estrutura.concat("?>");
+        estrutura = estrutura.concat("}\n?>");
         return estrutura;
     }
 

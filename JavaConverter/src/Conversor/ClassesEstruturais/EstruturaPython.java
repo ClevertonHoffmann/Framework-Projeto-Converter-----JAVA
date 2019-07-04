@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package Conversor.ClassesEstruturais;
 
 import java.util.ArrayList;
@@ -13,6 +8,9 @@ import java.util.ArrayList;
  */
 public class EstruturaPython implements Estructure{
     @Override
+    /**
+     * Método que retorna string da estrutura da classe Python
+     */
     public String criaClasse(ArrayList<String> a) {
         
         String estrutura;
@@ -45,7 +43,7 @@ public class EstruturaPython implements Estructure{
                 estrutura = estrutura.concat("              return self.").concat(a.get(i)).concat("\n\n");
             }
         }
-        //Implementa o toString
+        //Monta o toString()    
         estrutura = estrutura.concat("       def __repr__(self):\n");
         estrutura = estrutura.concat("              return “").concat(a.get(0)).concat("(%s");
         for (int i = 1; i<a.size(); i++){
