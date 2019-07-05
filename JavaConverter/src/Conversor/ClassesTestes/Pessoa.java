@@ -1,5 +1,7 @@
 package Conversor.ClassesTestes;
 
+import java.util.Date;
+
 /**
  * Classe pessoa teste
  * @author Cleverton
@@ -11,7 +13,16 @@ public class Pessoa {
     private String nome;
     private int idade;
     private String endereco;
+    private Date nascimento;
 
+    public Date getNascimento() {
+        return nascimento;
+    }
+
+    public void setNascimento(Date nascimento) {
+        this.nascimento = nascimento;
+    }   
+    
     public int getTelefone() {
         return telefone;
     }

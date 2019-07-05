@@ -41,6 +41,7 @@ public class Principal {
             valores.add(campo.getAnnotatedType().getType().getTypeName().replaceAll("java.lang.", "")); 
         }
         int k=0;
+        //Parte de verificar o nome Double maiusculo e transformar minusculo para padronizar as variáveis
         for(String a: valores){
             if(a.equals("Double")){
                 valores.set(k, "double");
