@@ -1,0 +1,51 @@
+Links de construção das classes.
+
+Contrução da classe persistencia
+https://www.devmedia.com.br/lendo-dados-de-txt-com-java/23221
+https://www.lncc.br/~rogerio/poo/08-Arquivos-Java/Escrever%20e%20Ler%20arquivos%20com%20Java.pdf
+http://karanalpe.com.br/tecnologia/back-end/como-percorrer-os-atributos-de-um-pojo-em-java-reflection/
+xx---xx---xx---xx---xx---xx---xx---xx---xx---xx---xx---xx
+
+Construção classe EstruturaPHP:
+https://www.php.net/docs.php
+
+xx---xx---xx---xx---xx---xx---xx---xx---xx---xx---xx---xx
+
+Construção classe EstruturaPython:
+http://pythonclub.com.br/introducao-classes-metodos-python-basico.html
+https://docs.python.org/2/reference/datamodel.html#object.__repr__
+http://orion.lcg.ufrj.br/python/_09%20-%20Programando%20em%20Python%20-%20Classes.pdf
+https://professormarcolan.com.br/classe-em-python/
+https://www.devmedia.com.br/como-criar-minha-primeira-classe-em-python/38912
+https://docs.python.org/3/reference/datamodel.html#customization
+https://www.geeksforgeeks.org/str-vs-repr-in-python/
+https://wiki.python.org.br/ProgramacaoOrientadaObjetoPython
+
+xx---xx---xx---xx---xx---xx---xx---xx---xx---xx---xx---xx
+
+Construção classe EstruturaJavaScript:
+http://www.jsweet.org/jsweet-live-sandbox/
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/class
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode
+https://blog.schoolofnet.com/tudo-o-que-voce-precisa-saber-sobre-classes-no-javascript/
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes
+https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Indexed_collections
+https://imasters.com.br/desenvolvimento/programacao-orientada-objetos-em-javascript
+https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Classes
+https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Classes/constructor
+
+xx---xx---xx---xx---xx---xx---xx---xx---xx---xx---xx---xx
+
+Construção classe EstruturaCmaismais:
+https://www.inf.pucrs.br/~pinho/PRGSWB/OO/oocpp.html#Classes
+https://murilo.wordpress.com/2009/05/21/como-implementar-facilmente-getters-e-setters-em-c/
+https://murilo.wordpress.com/2009/06/15/construtores-em-cpp/
+http://www.galirows.com.br/meublog/blog/pratica-oo-cpp-parte2/
+https://edisciplinas.usp.br/pluginfile.php/4280741/mod_resource/content/1/Cpp_JoseFernando-MarceloManzato.pdf
+http://www.cplusplus.com/forum/general/34661/
+https://blog.mxcursos.com/orientacao-objetos-com-cplusplus/
+http://www.cplusplus.com/reference/string/to_string/
+https://www.inf.pucrs.br/~flash/lapro2ec/aulas/aula_strings.html
+http://www.inf.unioeste.br/~adair/ED/Apostilas/Introducao%20POO%20C++.pdf
+
+
