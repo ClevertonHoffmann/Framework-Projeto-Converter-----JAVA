@@ -14,40 +14,40 @@ var Carro = (function (){
                 this.valor = null; 
       }
 
-      Carro.prototype.getnome = function() {
+      Carro.prototype.getnome= function() {
           return this.nome;
       };
-      Carro.prototype.setnome(nome)= function(nome) {
+      Carro.prototype.setnome = function(nome) {
           this.nome = nome;
       }; 
       Carro.prototype.getano= function() {
           return this.ano;
       };
-      Carro.prototype.setano(ano)= function(ano) {
+      Carro.prototype.setano = function(ano) {
           this.ano = ano;
       }; 
       Carro.prototype.getmodelo= function() {
           return this.modelo;
       };
-      Carro.prototype.setmodelo(modelo)= function(modelo) {
+      Carro.prototype.setmodelo = function(modelo) {
           this.modelo = modelo;
       }; 
       Carro.prototype.getmarca= function() {
           return this.marca;
       };
-      Carro.prototype.setmarca(marca)= function(marca) {
+      Carro.prototype.setmarca = function(marca) {
           this.marca = marca;
       }; 
       Carro.prototype.getcombustivel= function() {
           return this.combustivel;
       };
-      Carro.prototype.setcombustivel(combustivel)= function(combustivel) {
+      Carro.prototype.setcombustivel = function(combustivel) {
           this.combustivel = combustivel;
       }; 
       Carro.prototype.getvalor= function() {
           return this.valor;
       };
-      Carro.prototype.setvalor(valor)= function(valor) {
+      Carro.prototype.setvalor = function(valor) {
           this.valor = valor;
       }; 
 
@@ -56,6 +56,6 @@ Carro.prototype.toString = function() {
 return "Carro: {"+"nome= "+this.nome+",ano= "+this.ano+",modelo= "+this.modelo+",marca= "+this.marca+",combustivel= "+this.combustivel+",valor= "+this.valor+"}";
 };
 return Carro;
-});
+}());
 
 Carro["__class"] = "Carro";
