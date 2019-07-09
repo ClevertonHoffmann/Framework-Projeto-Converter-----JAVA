@@ -73,8 +73,8 @@ public function setvalor($valor)
 } 
 
 
-function __toString() {
-return "Carro: {"."nome: ".getnome()."ano: ".getano()."modelo: ".getmodelo()."marca: ".getmarca()."combustivel: ".getcombustivel()."valor: ".getvalor()."}";
+function toString() {
+return "Carro: {"."nome: ".$this->getnome()."ano: ".$this->getano()."modelo: ".$this->getmodelo()."marca: ".$this->getmarca()."combustivel: ".$this->getcombustivel()."valor: ".$this->getvalor()."}";
 }
 }
 ?>

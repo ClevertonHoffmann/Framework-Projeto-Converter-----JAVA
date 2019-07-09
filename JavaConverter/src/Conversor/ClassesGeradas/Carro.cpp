@@ -1,17 +1,17 @@
-#include <iostream.h>  
+#include <iostream>  
 
 class Carro{ 
 
-private: 
-      String nome; 
+public: 
+      string nome; 
       int ano; 
-      String modelo; 
-      String marca; 
-      String combustivel; 
+      string modelo; 
+      string marca; 
+      string combustivel; 
       double valor; 
 
 public: 
-      String getnome() 
+      string getnome() 
       {
              return nome;
       } 
@@ -21,17 +21,17 @@ public:
              return ano;
       } 
 
-      String getmodelo() 
+      string getmodelo() 
       {
              return modelo;
       } 
 
-      String getmarca() 
+      string getmarca() 
       {
              return marca;
       } 
 
-      String getcombustivel() 
+      string getcombustivel() 
       {
              return combustivel;
       } 

@@ -47,9 +47,9 @@ public class EstruturaPHP implements Estructure {
         for (int i = 1; i < a.size(); i++) {
             if (i % 2 != 0) {
                 if (i == 1) {
-                    estrutura = estrutura.concat("\"").concat(a.get(i)).concat(": \".get").concat(a.get(i)).concat("()");
+                    estrutura = estrutura.concat("\"").concat(a.get(i)).concat(": \".$this->get").concat(a.get(i)).concat("()");
                 } else {
-                    estrutura = estrutura.concat(".\"").concat(a.get(i)).concat(": \".get").concat(a.get(i)).concat("()");
+                    estrutura = estrutura.concat(".\";").concat(a.get(i)).concat(": \".$this->get").concat(a.get(i)).concat("()");
                 }
             }
         }

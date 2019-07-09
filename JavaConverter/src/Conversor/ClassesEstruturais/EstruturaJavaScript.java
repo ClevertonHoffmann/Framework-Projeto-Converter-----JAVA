@@ -31,7 +31,7 @@ public class EstruturaJavaScript implements Estructure{
             if(i%2!=0){
                 estrutura = estrutura.concat("      ").concat(a.get(0)).concat(".prototype.get").concat(a.get(i)).concat("= function() {\n");
                 estrutura = estrutura.concat("          return this.").concat(a.get(i).concat(";\n      };\n"));
-                estrutura = estrutura.concat("      ").concat(a.get(0)).concat(".prototype.set").concat(a.get(i)).concat("(").concat(a.get(i)).concat(")").concat("= function(").concat(a.get(i)).concat(") {\n");
+                estrutura = estrutura.concat("      ").concat(a.get(0)).concat(".prototype.set").concat(a.get(i)).concat(" ").concat("= function(").concat(a.get(i)).concat(") {\n");
                 estrutura = estrutura.concat("          this.").concat(a.get(i)).concat(" = ").concat(a.get(i)).concat(";\n      }; \n");
             }
         }
@@ -52,7 +52,7 @@ public class EstruturaJavaScript implements Estructure{
         estrutura = estrutura.concat("+\"}\";");
         estrutura = estrutura.concat("\n};\n");
         estrutura = estrutura.concat("return ").concat(a.get(0)).concat(";\n");
-        estrutura = estrutura.concat("});\n\n");
+        estrutura = estrutura.concat("}());\n\n");
         estrutura = estrutura.concat(a.get(0)).concat("[\"__class\"] = ").concat("\"").concat(a.get(0)).concat("\";");
         return estrutura;
     }

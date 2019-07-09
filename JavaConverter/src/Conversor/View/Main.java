@@ -1,7 +1,7 @@
 package Conversor.View;
 
+import Conversor.ClassesParametroJava.Carro;
 import Conversor.ClassesEstruturais.*;
-import Conversor.ClassesTestes.*;
 import Conversor.Controller.Principal;
 
 /**
@@ -16,13 +16,15 @@ public class Main {
     public static void main(String[] args) {
         
         Carro c = new Carro();
-       // Pessoa pes = new Pessoa();
+       // System.out.print(c);
+        
+      //  Pessoa pes = new Pessoa();
        // Principal p = new Principal(pes, new EstruturaPython(), ".py");
-          Principal p = new Principal(c, new EstruturaPython(), ".py");
+     //  Principal p = new Principal(c, new EstruturaPython(), ".py");
       //  p = new Principal(c, new EstruturaPHP(), ".php");
       //  p = new Principal(c, new EstruturaJavaScript(), ".js");      
-      //  p = new Principal(c, new EstruturaCmaismais(), ".cpp");
-      
+      Principal p = new Principal(c, new EstruturaCmaismais(), ".cpp");
+    //  Principal p = new Principal(c, new EstruturaPHP(), ".php");
     }
     
 }

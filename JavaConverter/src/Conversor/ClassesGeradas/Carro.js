@@ -14,7 +14,7 @@ var Carro = (function (){
                 this.valor = null; 
       }
 
-      Carro.prototype.getnome= function() {
+      Carro.prototype.getnome = function() {
           return this.nome;
       };
       Carro.prototype.setnome(nome)= function(nome) {
