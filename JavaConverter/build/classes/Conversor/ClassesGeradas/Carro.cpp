@@ -1,9 +1,10 @@
-#include <iostream>  
+#include <iostream> 
+#include <string>  // Necessário para usar strings
 using namespace std;
 
 class Carro{ 
 
-public: 
+private: 
       string nome; 
       int ano; 
       string modelo; 
@@ -42,45 +43,43 @@ public:
              return valor;
       } 
 
-      void setnome(String nome) 
+      void setnome(string _nome) 
       {
-             this->nome = nome;
+             nome = _nome;
       } 
 
-      void setano(int ano) 
+      void setano(int _ano) 
       {
-             this->ano = ano;
+             ano = _ano;
       } 
 
-      void setmodelo(String modelo) 
+      void setmodelo(string _modelo) 
       {
-             this->modelo = modelo;
+             modelo = _modelo;
       } 
 
-      void setmarca(String marca) 
+      void setmarca(string _marca) 
       {
-             this->marca = marca;
+             marca = _marca;
       } 
 
-      void setcombustivel(String combustivel) 
+      void setcombustivel(string _combustivel) 
       {
-             this->combustivel = combustivel;
+             combustivel = _combustivel;
       } 
 
-      void setvalor(double valor) 
+      void setvalor(double _valor) 
       {
-             this->valor = valor;
+             valor = _valor;
       } 
 
 
 
-string Carro ::toString() {
-      std::string texto = "Carro{"+"nome:" + std::to_string( this->getnome())
-      +"nome:" + std::to_string( this->getnome())
-      +"ano:" + std::to_string( this->getano())
-      +"modelo:" + std::to_string( this->getmodelo())
-      +"marca:" + std::to_string( this->getmarca())
-      +"combustivel:" + std::to_string( this->getcombustivel())
-      +"valor:" + std::to_string( this->getvalor())+"}"
-}
-
+      string  toString() {
+             return "Carro{nome:" +(nome)
+             +";ano:" +to_string(ano)
+             +";modelo:" +(modelo)
+             +";marca:" +(marca)
+             +";combustivel:" +(combustivel)
+             +";valor:" +to_string(valor)+"}";}
+};
