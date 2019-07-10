@@ -1,4 +1,5 @@
 #include <iostream>  
+using namespace std;
 
 class Carro{ 
 
@@ -82,3 +83,4 @@ string Carro ::toString() {
       +"combustivel:" + std::to_string( this->getcombustivel())
       +"valor:" + std::to_string( this->getvalor())+"}"
 }
+

@@ -45,4 +45,4 @@ class Carro:
               return self.valor
 
        def __repr__(self):
-              return “Carro(%s,%s,%s,%s,%s,%s,%s)”%(str(self.nome),str(self.ano),str(self.modelo),str(self.marca),str(self.combustivel),str(self.valor))
+              return "Carro{"+"nome:"+str(self.nome)+";ano:"+str(self.ano)+";modelo:"+str(self.modelo)+";marca:"+str(self.marca)+";combustivel:"+str(self.combustivel)+";valor:"+str(self.valor)+"}"

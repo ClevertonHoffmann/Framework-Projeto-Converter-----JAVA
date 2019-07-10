@@ -19,8 +19,8 @@ public class Main {
        // System.out.print(c);
         
       //  Pessoa pes = new Pessoa();
-       // Principal p = new Principal(pes, new EstruturaPython(), ".py");
-       Principal p = new Principal(c, new EstruturaJavaScript(), ".js");
+       Principal p = new Principal(c, new EstruturaPython(), ".py");
+      // Principal p = new Principal(c, new EstruturaJavaScript(), ".js");
       //  p = new Principal(c, new EstruturaPHP(), ".php");
       //  p = new Principal(c, new EstruturaJavaScript(), ".js");      
      // Principal p = new Principal(c, new EstruturaCmaismais(), ".cpp");
